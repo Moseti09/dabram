@@ -1,0 +1,272 @@
+html{
+    height:100%;
+    box-sizing: border-box;
+}
+
+body{
+        font-family:sans-serif;
+        position: relative;
+        margin:0;
+        min-height: 100%;
+        padding-bottom: 6.74rem;
+        box-sizing: inherit;
+        
+}
+
+
+h3 {
+    position: relative;
+    margin-left:0% ;
+    margin-top: 0%;
+    font-size:170%;
+    font-family:Lato, sans-serif; font-weight:300;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    height:70px;
+    text-decoration: none;
+    position: relative;
+    line-height:75px ;
+    padding: 0px 100px;
+    background-image: linear-gradient(whitesmoke);
+ 
+    
+    }
+
+nav .name p{
+
+    font-size: 30px;
+    font-weight: bold;
+    float:left;
+    color: green;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+.custom a{
+    position: relative;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0%;
+    text-decoration: none;
+   padding: 0px 20px;
+    color: darkgreen;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.custom a:hover{
+    color: blue;
+    transition: all 0.4s ease 0s;
+}
+.logo{
+    top: 4px;   
+    height: 65px;
+    position:relative ;
+    float: left;
+   
+   
+   }
+   
+ 
+
+.container {
+ width :40%;
+ height:30%;
+ background: aliceblue;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: 11%;
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    color: black;
+    font-weight: 800;
+    margin-bottom:20px;
+    position: relative;
+}
+
+form input, form textarea{
+    border:0;
+    margin:10px 0;
+    padding:20px;
+    outline:none;
+    background:whitesmoke;
+    font-size: 16px;
+}
+
+form button{
+    padding:15px;
+    background:#ff5361;
+    color: white;
+    font-size: 18px;
+    border:0;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin:20px auto 0;
+    border-radius: 30px;
+
+}
+
+
+
+    .pics{
+        width:500px;
+        height:auto;
+        margin:5px;
+        border:6px;
+
+    }
+    @media only screen and (max-width: 400px) {
+            .body{
+
+                width:90%;
+                height:90%;
+
+
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            .body{
+
+                width:90%;
+                height:90%;
+
+
+            }
+        }
+
+.main-scroll-div{
+    width:90%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /*border:2px solid red;*/
+}
+.cover{
+        position: relative;
+        width:90%;
+        height:50%;
+}
+.cover::before{
+
+    position: absolute;
+    content:"";
+    left:0;
+    top:0;
+    z-index:99;
+    height:100%;
+    width:150px;
+    background-image: linear-gradient(90deg, white, transparent);
+
+}
+.cover::after{
+
+    position: absolute;
+    content:"";
+    right:0;
+    top:0;
+    z-index:99;
+    height:100%;
+    width:150px;
+    background-image: linear-gradient(-90deg,white, transparent);
+
+}
+
+.scroll-images{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:left ;
+    align-items:center;
+    overflow:auto;
+    position:relative;
+    scroll-behavior:smooth ;
+
+}
+.images{
+        min-width: 600px;
+        height:450px;
+        margin:1px 10px;
+        cursor:pointer;
+        border:1px solid white ;
+        overflow:hidden ;
+
+
+}
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance:none;
+}
+
+.pics{
+    max-width:100%;
+    max-height:100%;
+
+}
+.icon {
+    color:green;
+    background-color: white;
+    font-size:50px;
+    outline:none;
+    border:none;
+    padding: 0px 20px;
+    cursor: pointer;
+
+}
+.icon:hover {
+    color :blue;
+
+}
+footer{
+    background-color: maroon;
+    width: 100%;
+    height:80px;
+    bottom:0;
+    position: absolute;
+    color: white;
+    }
+    footer p{
+    position: absolute;
+    left:8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1.5%;
+    color: white;
+    
+    }
+    
+    footer div{
+        right:15%;
+        position: absolute;
+        margin-top: 1.2%;
+        color: aliceblue;
+    }
+    footer strong{
+        color: white;
+        text-decoration: none;
+    }

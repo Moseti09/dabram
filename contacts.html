@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DABRAM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+<body>
+    <nav>
+        <div class="name">
+                <p><a href="index.html"><img class="logo" src="newlogo.jpg"></a>DABRAM ENTERPRISES LTD</p>
+        </div>
+        
+        <div class="custom">
+            <a href="supplies.html">Info</a>
+            <a href="about-us.html">About us</a>
+            <a href="contacts.html">Contacts</a>
+         </div>
+
+         </nav>
+           
+            <div class="container">
+                <form >
+                    <h3>Contact us</h3> 
+                    <input type="text" id="name" placeholder="First name"  autocomplete="off" required> <br>
+                    <input type="text" id="name" placeholder="Second name"  autocomplete="off"required><br>
+                    <input type="text" id="phone" placeholder="Phone no" autocomplete="off"required><br>
+                    <input type="email" id="email" placeholder="Email"  autocomplete="off"required><br>
+                    <textarea id="message" rows="4" placeholder="Message" autocomplete="off"required></textarea>
+                    <button id="btn">Send</button>
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                var btn = document.getElementById('btn');
+                btn.addEventListener('click', function(e) {
+                e.preventDefault()
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var subject= document.getElementById('phone').value;
+                var message = document.getElementById('message').value;
+                var body = 'name:' +name + '<br/> email:' +email + '<br/> subject' +
+                subject + '<br/> message ' + message;                   
+                   
+                Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "cliffmoseti@gmail.com",
+    Password : "kmzrbfvzisobnitf",
+    To : 'cliffmoseti@gmail.com',
+    From : email,
+    Subject : subject,
+    Body : body        }) .then(
+        message => alert("Message is sent successfully")
+    );})
+
+                
+         
+         </script>
+        
+        <footer>
+            <p>  Copyright &copy; Reserved 2021-2025.<strong> Name of company.</strong> All rights reserved.</strong></p>
+        <div>
+            <p>Developed by: <a href="https://www.instagram.com/moseti_09/"><strong>@moseti_09</strong></a></p>
+        </div>
+      </footer>    
+
+
+
+</body>
+</html>
